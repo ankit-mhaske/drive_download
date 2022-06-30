@@ -8,4 +8,6 @@ folder = "18vTzaKFVoCs8eHAZ9_bI1aXdI4beDNfx"
 
 file_names = drive_obj.ListFile({'q':f"'{folder}' in parents and trashed=false"}).GetList()
 for files in file_names:
-	files.GetContentFile(files['title'])
+	print(files['title'])
+        files.GetContentFile(files['title'])
+        os.system('cmd /k "dir"')
