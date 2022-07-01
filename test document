@@ -1,4 +1,13 @@
 Test Scenarios:
-  1)Executing the python without giving correct argument.
-  2)Executing python file with passing incorrect parameters
- 
+
+            Test                                                                                  Expected Output
+  1)Executing the python with giving correct argument.                          1)Should return the output with respective argument given.
+                                                                                  For example: python redhat.py
+  2)Executing python file with passing correct parameters                       2)Should return the correct output with the parameter given
+                                                                                  For example: python redhat.py -l --> (-l to list files)
+  3)Files from drive and and downloaded from same should                        3)For example: size of ALPINA.jpg should be same in drive and in folder downloaded
+    be of same size     
+  4)Program should not take/accept invalid argument                             4)Example: python redhat.py -z 
+                                                                                  Should return invalid argument '-z'
+  5)Bad path should not be specified after -p parameter                         5)python redhat.py -p /user/app/\fold//raw
+  
